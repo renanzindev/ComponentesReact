@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Componente de Botão Reutilizável
-const Botao = ({ texto, cor }) => {
+const Botao = ({ texto, cor, onClick }) => {
   const estilo = {
     backgroundColor: cor,  // Define a cor do botão
     color: 'white',        // Define a cor do texto do botão
@@ -12,7 +12,7 @@ const Botao = ({ texto, cor }) => {
   };
 
   return (
-    <button style={estilo}>
+    <button style={estilo} onClick={onClick}>
       {texto}  {/* Define o texto dentro do botão */}
     </button>
   );
